@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Aapda Mitra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #d4e4d9, #34bf52);
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-align:center;
+    }
+    .container{
+      background: rgba(87, 95, 211, 0.726);
+      padding:45px;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.35);
+      width:320px;
+    }
+    h1{ margin:0 0 10px; font-size:34px; letter-spacing:1px; }
+    .tagline{ font-size:15px; margin-bottom:25px; opacity:0.9; }
+    .btn{
+      display:block;
+      width:100%;
+      margin:12px 0;
+      padding:14px;
+      font-size:16px;
+      border:none;
+      border-radius:10px;
+      cursor:pointer;
+      transition:0.25s;
+      font-weight:bold;
+    }
+    .victim{ background:#ffd600; color:black; }
+    .victim:hover{ background:#ffe44d; }
+    .rescuer{ background:#00e676; color:black; }
+    .rescuer:hover{ background:#33f08c; }
+    .footer{ margin-top:18px; font-size:12px; opacity:0.8; }
+    select{ width:100%; padding:10px 12px; border-radius:10px; border:0; margin-bottom:14px; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <select onchange="changeLang(this.value)">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="ta">தமிழ்</option>
+    </select>
+
+    <h1 id="title">Aapda Mitra</h1>
+    <div class="tagline" id="tagline">Your companion in times of emergency</div>
+
+    <button class="btn victim" id="helpBtn" onclick="location.href='vic.html'">I Need Help</button>
+    <button class="btn rescuer" id="rescuerBtn" onclick="location.href='res.html'">I Am a Rescuer</button>
+
+    <div class="footer" id="footer">Stay safe • Help others • Save lives</div>
+  </div>
+
+  <script>
+    const text = {
+      en: { title:"Aapda Mitra", tagline:"Your companion in times of emergency", help:"I Need Help", rescuer:"I Am a Rescuer", footer:"Stay safe • Help others • Save lives" },
+      hi: { title:"आपदा मित्र", tagline:"आपातकाल में आपका साथी", help:"मुझे मदद चाहिए", rescuer:"मैं बचावकर्ता हूँ", footer:"सुरक्षित रहें • दूसरों की मदद करें • जीवन बचाएँ" },
+      ta: { title:"ஆப்தா மித்ரா", tagline:"அவசர காலத்தில் உங்கள் தோழன்", help:"எனக்கு உதவி வேண்டும்", rescuer:"நான் மீட்பவர்", footer:"பாதுகாப்பாக இருங்கள் • மற்றவர்களுக்கு உதவுங்கள் • உயிர்களை காப்பாற்றுங்கள்" }
+    };
+    function changeLang(lang){
+      document.getElementById("title").textContent = text[lang].title;
+      document.getElementById("tagline").textContent = text[lang].tagline;
+      document.getElementById("helpBtn").textContent = text[lang].help;
+      document.getElementById("rescuerBtn").textContent = text[lang].rescuer;
+      document.getElementById("footer").textContent = text[lang].footer;
+    }
+  </script>
+</body>
+</html>

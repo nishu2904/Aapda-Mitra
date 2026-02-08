@@ -1,0 +1,87 @@
+{
+  "sos_requests": [
+    {
+      "user_id": "6b605d92-8083-48f4-8d10-0dba0fe92477",
+      "name": "Anonymous",
+      "latitude": 12.8394512,
+      "longitude": 80.1552007,
+      "accuracy": 14.744,
+      "emergency_type": "critical",
+      "severity": "CRITICAL",
+      "people": 1,
+      "note": "Auto SOS: live location + 15s video",
+      "status": "ACCEPTED",
+      "timestamp": "2026-02-08T04:31:05.173915+00:00",
+      "media": [
+        {
+          "type": "video",
+          "filename": "6b605d92-8083-48f4-8d10-0dba0fe92477_video_2026-02-08T00-20-11.972828+00-00.webm",
+          "url": "/media/6b605d92-8083-48f4-8d10-0dba0fe92477_video_2026-02-08T00-20-11.972828+00-00.webm",
+          "sender": "victim",
+          "timestamp": "2026-02-08T00:20:12.013768+00:00"
+        }
+      ]
+    },
+    {
+      "user_id": "78f21da7-a3de-415f-9a34-51b103aa5fb0",
+      "name": "Anonymous",
+      "latitude": 13.0809856,
+      "longitude": 80.2062336,
+      "accuracy": 183908.94995682687,
+      "emergency_type": "critical",
+      "severity": "CRITICAL",
+      "people": 1,
+      "note": "Auto SOS: live location + 15s video",
+      "status": "NEW",
+      "timestamp": "2026-02-08T00:42:19.638844+00:00",
+      "media": []
+    },
+    {
+      "user_id": "286a660b-84f7-4506-b63b-4e2fd72f9f72",
+      "name": "Anonymous",
+      "latitude": 13.0809856,
+      "longitude": 80.2062336,
+      "accuracy": 183908.94995682687,
+      "emergency_type": "critical",
+      "severity": "CRITICAL",
+      "people": 1,
+      "note": "Auto SOS: live location + 15s video",
+      "status": "NEW",
+      "timestamp": "2026-02-08T00:43:32.554065+00:00",
+      "media": [
+        {
+          "type": "video",
+          "filename": "286a660b-84f7-4506-b63b-4e2fd72f9f72_video_2026-02-08T00-43-32.544063+00-00.webm",
+          "url": "/media/286a660b-84f7-4506-b63b-4e2fd72f9f72_video_2026-02-08T00-43-32.544063+00-00.webm",
+          "sender": "victim",
+          "timestamp": "2026-02-08T00:43:32.554065+00:00"
+        }
+      ]
+    },
+    {
+      "user_id": "576af13b-589d-4d5b-a9b9-05b77521a61c",
+      "name": "Anonymous",
+      "latitude": 13.0809856,
+      "longitude": 80.2062336,
+      "accuracy": 183908.94995682687,
+      "emergency_type": "critical",
+      "severity": "CRITICAL",
+      "people": 1,
+      "note": "Auto SOS: live location + 15s video",
+      "status": "NEW",
+      "timestamp": "2026-02-08T01:05:46.363239+00:00",
+      "media": [
+        {
+          "type": "video",
+          "filename": "576af13b-589d-4d5b-a9b9-05b77521a61c_video_2026-02-08T01-05-46.354244+00-00.webm",
+          "url": "/media/576af13b-589d-4d5b-a9b9-05b77521a61c_video_2026-02-08T01-05-46.354244+00-00.webm",
+          "sender": "victim",
+          "timestamp": "2026-02-08T01:05:46.363239+00:00"
+        }
+      ],
+      "cluster_id": "796e7cc3-480c-4b39-ad55-f30ff6c7e5bd",
+      "cluster_lat": 13.0809856,
+      "cluster_lng": 80.2062336
+    }
+  ]
+}

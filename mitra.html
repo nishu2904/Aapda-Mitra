@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aapad Mitraa SOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mitra.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚨 Aapad Mitra | आपद मित्र | ஆபத் மித்ரா</h1>
+
+
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+      <option value="ta">தமிழ்</option>
+    </select>
+
+    <button id="sosBtn"></button>
+
+    <button id="mapBtn" class="map-btn">📍 Nearby Shelters</button>
+
+    <p id="note"></p>
+  </div>
+
+  <div id="formScreen" class="hidden card">
+    <h2 id="formTitle"></h2>
+
+    <label id="severityLabel"></label>
+    <select id="severity"></select>
+
+    <input type="number" id="people" min="1" step="1" value="1" />
+    <textarea id="message"></textarea>
+
+    <button id="submitBtn"></button>
+  </div>
+
+  <div id="status" class="hidden card">
+    <h2 id="statusTitle"></h2>
+    <p id="statusMsg"></p>
+
+    <button id="voiceBtn"></button>
+
+    <p id="nearestShelter" class="distance-text"></p>
+
+    <button id="mapBtn2" class="map-btn">📍 Nearby Shelters</button>
+  </div>
+
+  <script src="mitra.js"></script>
+</body>
+</html>
